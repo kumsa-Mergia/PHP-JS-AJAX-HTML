@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<users>
+<user>
+<userid>kumsa</userid>
+<password>123</password>
+</user>
+<user>
+<userid>Abel</userid>
+<password>456</password>
+</user>
+<user>
+<userid>Samuel</userid>
+<password>789</password>
+</user>
+<user>
+<userid>dereje</userid>
+<password>1011</password>
+</user>
+<user>
+<userid>kalab</userid>
+<password>1213</password>
+</user>
+<user>
+<userid>mentesnot</userid>
+<password>1415</password>
+</user>
+</users>

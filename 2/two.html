@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Question TWO</title >
+<script language="javascript">
+function convert() {
+var num=document.forms["two"].num.value;
+document.forms ["two"].words.value="";
+
+if(isNaN(num)) {
+alert("Not a Number ");
+}
+
+else if(num<0 || num>999) {
+alert("Out of Range ");
+}
+else {
+var len=num.length;
+var words="";
+for(var i=0;i<len;i++) {
+var n=num.substr(i,1);
+switch(n) {
+case'0':words+="Zero";break;
+case'1':words+="One ";break;
+case'2':words+="Two ";break;
+case'3':words+="Three";break;
+case'4':words+="Four";break;
+case'5':words+="Five";break;
+case'6':words+="Six";break;
+case'7':words+="Seven";break;
+case'8':words+="Eight";break;
+default:words+="Nine";
+}
+}
+document.forms["two"].words.value=words;
+}
+}
+</script>
+
+</head>
+<body>
+<form name ="two">
+    <center> <h3 style="color: rgb(32, 32, 29); font-family: sans-serif;">
+     <i>Write an HTML page including any required JavaScript that takes a number from one text field in the range of 0 to 999 and shows it in another text field in words. if the number is out of range, it should show <span style="color: blue;">out of range</span>and if it is not a number, it should show <span style="color: blue;">not a number</span>message in the result box.</i> </h3>  
+</center>
+<br/>
+<center>
+   <span style="color: red;">Enter a Number:</span> 
+    <input type="text" name="num"></input> <br/></center><br/>
+<center>
+ <input style="background-color: rgb(42, 201, 161);" type="button" name="inwords" value="InWords" onclick ="convert()"></input>
+</center>
+<br/><br/>
+<center>
+     <span style="color: green">Number in Words : </span> 
+    <input type="text" name="words"></input>
+</center>
+<br/>
+</form >
+</body >
+</html>
+

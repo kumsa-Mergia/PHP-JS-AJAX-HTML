@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Question FOUR</title>
+<style >
+    
+p{
+color :rgb(0, 18, 175);
+font-weight :bold ;
+font-size :50;
+font-family: sans-serif;
+}
+</style>
+
+<script language="javascript">
+function capital()
+{
+var cunt=document.forms["four"].country.value;
+var capital="Please select any country";
+if(cunt=="Ethiopia")
+{
+capital="Addis Ababa";
+}
+if(cunt=="china")
+{
+capital="Beijeng";
+}
+if(cunt=="France")
+{
+capital="Paris";
+}
+if(cunt=="Turkey")
+{
+capital="Istanbul";
+}
+if(cunt=="Egypt")
+{
+capital ="Cairo";
+}
+if(cunt=="select")
+{
+capital="Please select any country";
+}
+document.getElementById("capt").innerHTML=capital;
+}
+</script>
+</head>
+<body>
+    <b>Write an HTML page that contains a selection box with a list of 5 countries. When the user selects a country, its capital should be printed next to the list. Add CSS to customize the properties of the font of the capital (color, bold and font size).
+    </b>
+<form name ="four">
+<br/>
+<center>Select a Country :
+ <select name ="country" onchange="capital()">
+<option value ="select">- -SELECT - -</option>
+<option value ="Ethiopia">Ethiopia</option>
+<option value ="china">CHINA</option>
+<option value ="France">FRANCE</option>
+<option value ="Turkey">Turkey</option>
+<option value ="Egypt">EGYPT</option>
+</select >
+<br/>
+<br/>
+<font color ="green" size ="6"> The Capital is :</font>
+<p id ="capt"></p>
+</center>
+</form >
+</body >
+</html >

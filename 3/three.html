@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Question THREE</title>
+<script language="javascript">
+function wcount() {
+var str=document.forms["three"].inputstring.value;
+var lines=str.split('\n').length;
+document.forms["three"].linecount.value=lines;
+document.forms["three"].wordcount.value=str.split (/\s/).length;
+document.forms["three"].charactercount.value=str.length-(lines-1);
+}
+</script>
+ </head>
+<body>
+<form name ="three">
+<center>
+    <b>Write an HTML page that has one input, which can take multi line text and a submit button.Once the user clicks the submit button, it should show the number of characters, words and lines in the text entered using an alert message. Words are separated with white space and lines are separated with new line character</b> <br>
+    <b style="color: blue;">Enter Multiple lines of text </b> <br/><br/>
+<textarea name ="inputstring" cols ="50" rows ="5"> </textarea><br/><br/>
+<input type ="button" name="count" value= "Count" onclick ="wcount()"> </input ><br /><br />
+<span style="color: green;">Number of lines : </span> 
+<input name ="linecount" type="text" value=" " size ="6"> <br/> <br/>
+<span style="color: yellow">Number of words :</span> 
+<input name ="wordcount" type="text" value=" " size ="6"> <br/> <br/>
+<span style="color: red">Number of characters: </span>
+<input name ="charactercount" type="text" value=" " size ="6"><br/><br/>
+</form >
+</body >
+</html >

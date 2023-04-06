@@ -1,0 +1,46 @@
+<html >
+<head >
+<title>Question ONE</title >
+<script language="javascript">
+function ndesc()
+{
+var num_array = new Array();
+var num=document.forms["one"].num.value;
+document.forms["one"].desc.value="";
+var nums = num .split(',');
+var len=num .split(',').length ;
+for(var i=0;i<len;i++)
+{
+num_array.push(nums [i]);
+}
+function sortN(a,b)
+{
+return b-a;
+}
+document.forms["one"].desc.value=num_array.sort(sortN);
+} 
+</script>
+</head >
+<body>
+<form name="one">
+<center>
+<h3 style="color: royalblue;"> Write an HTML page including JavaScript that takes a given set of integer numbers and shows them after sorting in descending order. </h3>
+</center>
+<br/>
+<center><span style="color: red; font-size: 25px;">
+    Enter Numbers separated by Comma :</span>
+ <input type="text" name="num" placeholder="eg.5,4,6,8"></input>
+  <br/>
+</center> <br/>
+<center>
+<input type="button" name="inwords" value="In Descending Order" onclick ="ndesc()" style="background-color: rgb(46, 170, 100); color: white; border-radius: 10px;"> 
+</input>
+</center>
+<br/><br/>
+<center>Number in Descending Order :
+ <input type="text" name="desc"> </input>
+ </center>
+<br/>
+</form>
+</body>
+</html>
